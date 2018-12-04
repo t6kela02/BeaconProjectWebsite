@@ -87,7 +87,7 @@
 	?>
 	
 	<script>
-		var beaconData1 = <?php echo json_encode($beacon1time); ?>;*/
+		var beaconData1 = <?php echo json_encode($beacon1time); ?>;
 		var beaconData2 = 0; /*<?php echo json_encode($beacon2time); ?>;*/
 		var beaconData3 = 0; /*<?php echo $beacon3time; ?>;*/
 		var beaconData4 = 0; /*<?php echo $beacon4time; ?>;*/
