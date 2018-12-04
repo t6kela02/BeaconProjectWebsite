@@ -58,7 +58,7 @@
 	</div>
 	
 	<script>
-		var beaconData1 = <?php echo $beacon1time; ?>;
+		var beaconData1 = 0; /*<?php echo $beacon1time; ?>;*/
 		var beaconData2 = 0;
 		var beaconData3 = 0;
 		var beaconData4 = 0;
