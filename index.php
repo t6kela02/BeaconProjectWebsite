@@ -116,11 +116,19 @@
 			$beacon4time = 0;
 			$beacon5time = 0;
 	
+			$beacon_name = "Paikka 2";
+			$selectUser = $con->prepare("SELECT * FROM `data` WHERE `beacon_name` = ?");
+			$selectUser->bind_param('s', $beacon_name);
+			$selectUser->execute();
+			$result = $selectUser->get_result();
+			/*
 			$sqlget = "SELECT * FROM data WHERE beacon_name = "Paikka 2"";
-			$sqldata = mysqli_query($dbcon, $sqlget) or die('error');
+			$sqldata = mysqli_query($dbcon, $sqlget) or die('error');*/
+	
+			
 			echo "<table>";
 			echo "<tr><th>Beacon name</th><th>seconds</th></tr>";
-			while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)){
+			while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 				echo "<tr><td>";
 				echo $row['beacon_name'];
 				echo "</td><td>";
