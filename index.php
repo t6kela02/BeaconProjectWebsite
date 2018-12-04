@@ -57,8 +57,37 @@
 		<canvas id="myChart"></canvas>
 	</div>
 	
+	<?php
+		include('connection.php');
+
+		$beacon1time = 0;
+		$beacon2time = 0;
+		$beacon3time = 0;
+		$beacon4time = 0;
+		$beacon5time = 0;
+
+
+
+		$sqlget = 'SELECT * FROM data WHERE beacon_name = "Paikka 2"';
+		$sqldata = mysqli_query($dbcon, $sqlget) or die('error');
+
+		echo "<table>";
+		echo "<tr><th>Beacon name</th><th>seconds</th></tr>";
+		while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)){
+			echo "<tr><td>";
+			echo $row['beacon_name'];
+			echo "</td><td>";
+			echo $row['seconds'];
+			echo "</td><td>";
+			$beacon2time = $beacon2time + $row['seconds'];
+			echo " " + $beacon2time;
+			echo "</td></tr>";
+		}
+		echo "</table>";
+	?>
+	
 	<script>
-		beaconData1 = <?php echo $beacon1time; ?>;
+		/*beaconData1 = <?php echo $beacon1time; ?>;*/
 		var beaconData2 = 0; /*<?php echo $beacon2time; ?>;*/
 		var beaconData3 = 0; /*<?php echo $beacon3time; ?>;*/
 		var beaconData4 = 0; /*<?php echo $beacon4time; ?>;*/
@@ -74,7 +103,7 @@
 				labels: ["Orange", "Red", "Green", "Yellow", "Blue"],
 				datasets: [{
 					label: '# of Votes',
-					data: [beaconData1, 19, 3, 5, 2],
+					data: [<?php echo $beacon1time; ?>, 19, 3, 5, 2],
 					backgroundColor: [
 						'#ff6e00',
 						'#960000',
@@ -105,36 +134,10 @@
 		});
 	</script>
 	
+	
 	<div id="dataheader"><h2>Data</h2></div>
 		
-		<?php
-			include('connection.php');
-		
-			$beacon1time = 0;
-			$beacon2time = 0;
-			$beacon3time = 0;
-			$beacon4time = 0;
-			$beacon5time = 0;
 	
-
-			
-			$sqlget = 'SELECT * FROM data WHERE beacon_name = "Paikka 2"';
-			$sqldata = mysqli_query($dbcon, $sqlget) or die('error');
-			
-			echo "<table>";
-			echo "<tr><th>Beacon name</th><th>seconds</th></tr>";
-			while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)){
-				echo "<tr><td>";
-				echo $row['beacon_name'];
-				echo "</td><td>";
-				echo $row['seconds'];
-				echo "</td><td>";
-				$beacon2time = $beacon2time + $row['seconds'];
-				echo " " + $beacon2time;
-				echo "</td></tr>";
-			}
-			echo "</table>";
-		?>
 	
 	<a name="footer"></a>
 	<footer id="main-footer">
