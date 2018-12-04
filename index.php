@@ -59,46 +59,6 @@
 	
 	<?php
 		include('connection.php');
-
-		$beacon1time = 0;
-		$sqlget1 = 'SELECT * FROM data WHERE beacon_name = "Paikka 1"';
-		$sqldata1 = mysqli_query($dbcon, $sqlget1) or die('error');
-
-		while($row = mysqli_fetch_array($sqldata1, MYSQLI_ASSOC)){
-			$beacon1time = $beacon1time + $row['seconds'];
-		}
-
-		$beacon2time = 0;
-		$sqlget2 = 'SELECT * FROM data WHERE beacon_name = "Paikka 2"';
-		$sqldata2 = mysqli_query($dbcon, $sqlget2) or die('error');
-
-		while($row = mysqli_fetch_array($sqldata2, MYSQLI_ASSOC)){
-			$beacon2time = $beacon2time + $row['seconds'];
-		}
-	
-		$beacon3time = 0;
-		$sqlget3 = 'SELECT * FROM data WHERE beacon_name = "Paikka 3"';
-		$sqldata3 = mysqli_query($dbcon, $sqlget3) or die('error');
-
-		while($row = mysqli_fetch_array($sqldata3, MYSQLI_ASSOC)){
-			$beacon3time = $beacon3time + $row['seconds'];
-		}
-	
-		$beacon4time = 0;
-		$sqlget4 = 'SELECT * FROM data WHERE beacon_name = "Paikka 4"';
-		$sqldata4 = mysqli_query($dbcon, $sqlget4) or die('error');
-
-		while($row = mysqli_fetch_array($sqldata4, MYSQLI_ASSOC)){
-			$beacon4time = $beacon4time + $row['seconds'];
-		}
-	
-		$beacon5time = 0;
-		$sqlget5 = 'SELECT * FROM data WHERE beacon_name = "Paikka 5"';
-		$sqldata5 = mysqli_query($dbcon, $sqlget5) or die('error');
-
-		while($row = mysqli_fetch_array($sqldata5, MYSQLI_ASSOC)){
-			$beacon5time = $beacon5time + $row['seconds'];
-		}
 	?>
 	
 	<script>
@@ -115,7 +75,7 @@
 		var myChart = new Chart(ctx, {
 			type: 'doughnut',
 			data: {
-				labels: ["Paikka 1", "Paikka 2", "Paikka 3", "Paikka 4", "Paikka 5"],
+				labels: ["Location 1", "Location 2", "Location 3", "Location 4", "Location 5"],
 				datasets: [{
 					label: '# of Time',
 					data: [beaconData1, beaconData2, beaconData3, beaconData4, beaconData5],
