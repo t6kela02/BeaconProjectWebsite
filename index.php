@@ -58,7 +58,7 @@
 	</div>
 	
 	<script>
-		var beaconData1 = 0;
+		var beaconData1 = <?php echo $beacon1time; ?>;
 		var beaconData2 = 0;
 		var beaconData3 = 0;
 		var beaconData4 = 0;
@@ -110,7 +110,13 @@
 		<?php
 			include('connection.php');
 		
-			$sqlget = "SELECT * FROM data";
+			$beacon1time = 0;
+			$beacon2time = 0;
+			$beacon3time = 0;
+			$beacon4time = 0;
+			$beacon5time = 0;
+	
+			$sqlget = "SELECT * FROM data WHERE beacon_name = "Paikka 2"";
 			$sqldata = mysqli_query($dbcon, $sqlget) or die('error');
 			echo "<table>";
 			echo "<tr><th>Beacon name</th><th>seconds</th></tr>";
