@@ -58,7 +58,7 @@
 	</div>
 	
 	<script>
-		/*var beaconData1 = <?php echo $beacon1time; ?>;*/
+		beaconData1 = <?php echo $beacon1time; ?>;
 		var beaconData2 = 0; /*<?php echo $beacon2time; ?>;*/
 		var beaconData3 = 0; /*<?php echo $beacon3time; ?>;*/
 		var beaconData4 = 0; /*<?php echo $beacon4time; ?>;*/
@@ -74,7 +74,7 @@
 				labels: ["Orange", "Red", "Green", "Yellow", "Blue"],
 				datasets: [{
 					label: '# of Votes',
-					data: [<?php echo $beacon1time; ?>, 19, 3, 5, 2],
+					data: [beaconData1, 19, 3, 5, 2],
 					backgroundColor: [
 						'#ff6e00',
 						'#960000',
