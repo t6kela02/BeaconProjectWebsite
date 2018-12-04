@@ -58,11 +58,11 @@
 	</div>
 	
 	<script>
-		var beaconData1 = 0; /*<?php echo $beacon1time; ?>;*/
-		var beaconData2 = 0;
-		var beaconData3 = 0;
-		var beaconData4 = 0;
-		var beaconData5 = 0;
+		var beaconData1 = <?php echo $beacon1time; ?>;
+		var beaconData2 = 0; /*<?php echo $beacon2time; ?>;*/
+		var beaconData3 = 0; /*<?php echo $beacon3time; ?>;*/
+		var beaconData4 = 0; /*<?php echo $beacon4time; ?>;*/
+		var beaconData5 = 0; /*<?php echo $beacon5time; ?>;*/
 
 		
 
