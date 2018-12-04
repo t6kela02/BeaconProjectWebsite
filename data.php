@@ -1,7 +1,7 @@
 <?php
     $con = mysqli_connect("den1.mysql3.gear.host", "accountit", "Ru8tmg~976-i", "accountit");
     
-    $selectUser = $con->prepare("SELECT * FROM `data` WHERE 'beacon_name=Paikka 2'");
+    $selectUser = $con->prepare("SELECT * FROM `data` WHERE beacon_name=Paikka 2");
     $selectUser->execute();
     $result = $selectUser->get_result();
     
