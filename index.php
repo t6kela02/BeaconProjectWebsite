@@ -115,9 +115,9 @@
 		var myChart = new Chart(ctx, {
 			type: 'doughnut',
 			data: {
-				labels: ["Orange", "Red", "Green", "Yellow", "Blue"],
+				labels: ["Paikka 1", "Paikka 2", "Paikka 3", "Paikka 4", "Paikka 5"],
 				datasets: [{
-					label: '# of Votes',
+					label: '# of Time',
 					data: [beaconData1, beaconData2, beaconData3, beaconData4, beaconData5],
 					backgroundColor: [
 						'#ff6e00',
