@@ -61,37 +61,52 @@
 		include('connection.php');
 
 		$beacon1time = 0;
-		$beacon2time = 0;
-		$beacon3time = 0;
-		$beacon4time = 0;
-		$beacon5time = 0;
+		$sqlget1 = 'SELECT * FROM data WHERE beacon_name = "Paikka 1"';
+		$sqldata1 = mysqli_query($dbcon, $sqlget) or die('error');
 
-
-
-		$sqlget = 'SELECT * FROM data WHERE beacon_name = "Paikka 2"';
-		$sqldata = mysqli_query($dbcon, $sqlget) or die('error');
-
-		echo "<table>";
-		echo "<tr><th>Beacon name</th><th>seconds</th></tr>";
-		while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)){
-			echo "<tr><td>";
-			echo $row['beacon_name'];
-			echo "</td><td>";
-			echo $row['seconds'];
-			echo "</td><td>";
-			$beacon2time = $beacon2time + $row['seconds'];
-			echo " " + $beacon2time;
-			echo "</td></tr>";
+		while($row = mysqli_fetch_array($sqldata1, MYSQLI_ASSOC)){
+			$beacon1time = $beacon1time + $row['seconds'];
 		}
-		echo "</table>";
+
+		$beacon2time = 0;
+		$sqlget2 = 'SELECT * FROM data WHERE beacon_name = "Paikka 2"';
+		$sqldata2 = mysqli_query($dbcon, $sqlget) or die('error');
+
+		while($row = mysqli_fetch_array($sqldata2, MYSQLI_ASSOC)){
+			$beacon2time = $beacon2time + $row['seconds'];
+		}
+	
+		$beacon3time = 0;
+		$sqlget3 = 'SELECT * FROM data WHERE beacon_name = "Paikka 3"';
+		$sqldata3 = mysqli_query($dbcon, $sqlget) or die('error');
+
+		while($row = mysqli_fetch_array($sqldata3, MYSQLI_ASSOC)){
+			$beacon3time = $beacon3time + $row['seconds'];
+		}
+	
+		$beacon4time = 0;
+		$sqlget4 = 'SELECT * FROM data WHERE beacon_name = "Paikka 4"';
+		$sqldata4 = mysqli_query($dbcon, $sqlget) or die('error');
+
+		while($row = mysqli_fetch_array($sqldata4, MYSQLI_ASSOC)){
+			$beacon4time = $beacon4time + $row['seconds'];
+		}
+	
+		$beacon5time = 0;
+		$sqlget5 = 'SELECT * FROM data WHERE beacon_name = "Paikka 5"';
+		$sqldata5 = mysqli_query($dbcon, $sqlget) or die('error');
+
+		while($row = mysqli_fetch_array($sqldata5, MYSQLI_ASSOC)){
+			$beacon5time = $beacon5time + $row['seconds'];
+		}
 	?>
 	
 	<script>
-		var beaconData1 = 2; /*<?php echo json_encode($beacon1time); ?>;*/
+		var beaconData1 = <?php echo json_encode($beacon1time); ?>;
 		var beaconData2 = <?php echo json_encode($beacon2time); ?>;
-		var beaconData3 = 0; /*<?php echo $beacon3time; ?>;*/
-		var beaconData4 = 0; /*<?php echo $beacon4time; ?>;*/
-		var beaconData5 = 0; /*<?php echo $beacon5time; ?>;*/
+		var beaconData3 = <?php echo json_encode($beacon3time); ?>;
+		var beaconData4 = <?php echo json_encode($beacon4time); ?>;
+		var beaconData5 = <?php echo json_encode($beacon5time); ?>;
 
 		
 
@@ -103,7 +118,7 @@
 				labels: ["Orange", "Red", "Green", "Yellow", "Blue"],
 				datasets: [{
 					label: '# of Votes',
-					data: [beaconData1, beaconData2, 3, 5, 2],
+					data: [beaconData1, beaconData2, beaconData3, beaconData4, beaconData5],
 					backgroundColor: [
 						'#ff6e00',
 						'#960000',
