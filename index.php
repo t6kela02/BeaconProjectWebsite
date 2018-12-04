@@ -128,6 +128,7 @@
 				echo $row['beacon_name'];
 				echo "</td><td>";
 				echo $row['seconds'];
+				echo "</td><td>";
 				$beacon2time = $beacon2time + $row['seconds'];
 				echo " " + $beacon2time;
 				echo "</td></tr>";
