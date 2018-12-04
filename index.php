@@ -103,7 +103,7 @@
 				labels: ["Orange", "Red", "Green", "Yellow", "Blue"],
 				datasets: [{
 					label: '# of Votes',
-					data: [<?php echo json_encode($beacon1time); ?>, 19, 3, 5, 2],
+					data: [<?php echo json_encode($beacon1time); ?>;, 19, 3, 5, 2],
 					backgroundColor: [
 						'#ff6e00',
 						'#960000',
