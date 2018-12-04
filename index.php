@@ -116,9 +116,8 @@
 			$beacon4time = 0;
 			$beacon5time = 0;
 	
-			$beacon_name = "Paikka 2";
-			$selectUser = $con->prepare("SELECT * FROM `data` WHERE `beacon_name` = ?");
-			$selectUser->bind_param('s', $beacon_name);
+
+			$selectUser = $con->prepare("SELECT * FROM `data`");
 			$selectUser->execute();
 			$result = $selectUser->get_result();
 			/*
