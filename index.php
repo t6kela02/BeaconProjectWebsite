@@ -25,52 +25,34 @@
 		</div>
 	</header>
 	
-	<section id="showcase">
-		<div class="container">
-			<h1>
-			Title
-			</h1>
-			<p>
-			Text here!
-			</p>
-		</div>
-	</section>
-	
-	<div class="container">
+	<div class="whitetextarea">
 		<section id="main">
-			<h1>
-			Title
-			</h1>
+			<h1>Project</h1>
 			<p>
-			Text here!
+			Projektissa on käytetty Estimoten beaconeja, jotka Android sovellus tunnistaa bluethoothin välityksellä. Sovellus tallentaatiedon beaconin lähellä vietetystä ajasta tietokantaan ja oman ajan sekä kaikkien käyttäjien yhteenlaskettua aikaa voi tarkastella chartista.
 			</p>
 		</section>
-		
-		<aside id="sidebar">
-			<p>
-			sidepbar
-			</p>
-		</aside>
+		<section id="beaconimg">
+			<img src="images/beacon1.png"/>
+		</section>
 	</div>
 	
 	<a name="Data"></a>
-	
-	<div class="container">
+	<div class="whitetextarea">
+		<h1>Data</h1>
+		<p>All users time by seconds near at different beacon</p>
 		<canvas id="myChart"></canvas>
 	</div>
 	
 	<?php
 		include('connection.php');
 	?>
-	
 	<script>
 		var beaconData1 = <?php echo json_encode($beacon1time); ?>;
 		var beaconData2 = <?php echo json_encode($beacon2time); ?>;
 		var beaconData3 = <?php echo json_encode($beacon3time); ?>;
 		var beaconData4 = <?php echo json_encode($beacon4time); ?>;
 		var beaconData5 = <?php echo json_encode($beacon5time); ?>;
-
-		
 
 		/*Chart.js*/
 		var ctx = document.getElementById("myChart").getContext('2d');
@@ -112,16 +94,24 @@
 	</script>
 	
 	<a name="App"></a>
-	
-	<div class="container" id="dataheader"><h2>Data</h2></div>
-		
-	<div class="container">
-		<img src="images/appLogin.png"/>
+	<div class="whitetextarea">
+		<h1>App</h1>
+		<section class="appPlace">
+				<img class="appImg" src="images/appLogin.png"/>
+				<p>You can log in or make a new account</p>
+		</section>
+		<section class="appPlace">
+			<img class="appImg" src="images/appUserdata1.png"/>
+			<p>Watch your own or all users data</p>
+		</section>
+		<section class="appPlace">
+			<img class="appImg" src="images/appBeacondata.png"/>
+			<p>See time spend near at any beacon by date</p>
+		</section>
 	</div>
 	
-	
 	<footer id="main-footer">
-		<p class="container">Copyright &copy 2018 My Website</p>
+		<p class="container">&copy 2018</p>
 	</footer>
 </body>
 </html>
