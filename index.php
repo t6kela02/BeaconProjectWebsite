@@ -25,7 +25,7 @@
 		</div>
 	</header>
 	
-	<div class="container">
+	<div class="whitetextarea">
 		<section id="main">
 			<h1>Project</h1>
 			<p>
