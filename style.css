@@ -11,6 +11,12 @@ body{
 	line-height:1.8em;
 }
 
+.anchor {
+	padding-top:50px; 
+	margin-top:-50px;
+	display: block;
+}
+
 .container{
 	width:80%;
 	margin:auto;
