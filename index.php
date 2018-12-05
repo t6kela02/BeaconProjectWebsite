@@ -29,7 +29,8 @@
 		<section id="main">
 			<h1>Project</h1>
 			<p>
-			Projektissa on käytetty Estimoten beaconeja, jotka Android sovellus tunnistaa bluethoothin välityksellä. Sovellus tallentaatiedon beaconin lähellä vietetystä ajasta tietokantaan ja oman ajan sekä kaikkien käyttäjien yhteenlaskettua aikaa voi tarkastella chartista.
+			The project uses Estimoto beacons, which the Android application recognises using bluethooth. 
+			The application saves the time spent near a certain beacon to the database and user can view own or all users spent time.
 			</p>
 		</section>
 		<section id="beaconimg">
@@ -97,8 +98,8 @@
 	<div class="whitetextarea">
 		<h1>App</h1>
 		<section class="appPlace">
-				<img class="appImg" src="images/appLogin.png"/>
-				<p>You can log in or make a new account</p>
+			<img class="appImg" src="images/appLogin.png"/>
+			<p>You can log in or make a new account</p>
 		</section>
 		<section class="appPlace">
 			<img class="appImg" src="images/appUserdata1.png"/>
@@ -106,7 +107,7 @@
 		</section>
 		<section class="appPlace">
 			<img class="appImg" src="images/appBeacondata.png"/>
-			<p>See time spend near at any beacon by date</p>
+			<p>See time spent near at any beacon by date</p>
 		</section>
 	</div>
 	
