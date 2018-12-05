@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-	width:50%;
+	width:70% !important;
 	margin:auto;
 	overflow:hidden;
 }
