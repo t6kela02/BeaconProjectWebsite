@@ -4,11 +4,11 @@
 }
 
 body{
-	background-color:#5b5b5b;
+	background-color:#dddddd;
 	color:white;
 	font-family:Lato;
 	font-size:16px;
-	line-height:1.6em;
+	line-height:1.8em;
 }
 
 .container{
@@ -17,11 +17,44 @@ body{
 	overflow:hidden;
 }
 
+.whitetextarea{
+	width:80%;
+	margin:20px auto;
+	padding:40px;
+	box-sizing:border-box;
+	overflow:hidden;
+	color: #000;
+	background-color:#fff;
+}
+
+.centteri{
+	display:inline-block;
+	position: relative;
+}
+
+.appPlace{
+	display:inline-block;
+	width:33%;
+	position: relative;
+	float:center;
+}
+
+#main{
+	float:left;
+	width:75%
+}
+
+#beaconimg{
+	float:right;
+	width:15%
+}
+
 #main-header{
 	background-color:black;
 	color:gray;
-	min-height:150px;
+	min-height:200px;
 	padding-top:80px;
+	margin-bottom:100px;
 }
 
 #main-header h1{
@@ -65,9 +98,19 @@ body{
 }
 
 #main-footer{
-	margin-top:500px;
+	margin-top:100px;
 	background-color:black;
 	color:white;
 	min-height:150px;
 	padding-top:80px;
+}
+
+@media(max-width:1200px){
+	#beaconimg{
+		width:100%
+	}
+
+	#main{
+		width:100%
+	}
 }
