@@ -110,14 +110,14 @@
 	</script>
 	
 	
-	<div id="dataheader"><h2>Data</h2></div>
+	<div class="container" id="dataheader"><h2>Data</h2></div>
 		
-	<div>
+	<div class="container">
 		<img src="images/appLogin.png"/>
 	</div>
 	
 	<a name="footer"></a>
-	<footer id="main-footer">
+	<footer id="main-footer" class="container">
 		<p>Copyright &copy 2018 My Website</p>
 	</footer>
 </body>
