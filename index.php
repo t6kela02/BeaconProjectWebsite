@@ -117,8 +117,8 @@
 	</div>
 	
 	<a name="footer"></a>
-	<footer id="main-footer" class="container">
-		<p>Copyright &copy 2018 My Website</p>
+	<footer id="main-footer">
+		<p class="container">Copyright &copy 2018 My Website</p>
 	</footer>
 </body>
 </html>
