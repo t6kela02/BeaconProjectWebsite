@@ -10,7 +10,7 @@
 </head>
 <body>
 	<nav id="navbar">
-		<div class="container">
+		<div class="navigationbar">
 			<ul>
 				<li><a href="#footer">App</a></li>
 				<li><a href="#">Data</a></li>
