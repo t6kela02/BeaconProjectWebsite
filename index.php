@@ -12,8 +12,8 @@
 	<nav id="navbar">
 		<div class="container">
 			<ul>
-				<li><a href="#footer">App</a></li>
-				<li><a href="#">Data</a></li>
+				<li><a href="#App">App</a></li>
+				<li><a href="#Data">Data</a></li>
 				<li><a href="#">Home</a></li>
 			</ul>
 		</div>
@@ -52,6 +52,8 @@
 			</p>
 		</aside>
 	</div>
+	
+	<a name="Data"></a>
 	
 	<div class="container">
 		<canvas id="myChart"></canvas>
@@ -109,6 +111,7 @@
 		});
 	</script>
 	
+	<a name="App"></a>
 	
 	<div class="container" id="dataheader"><h2>Data</h2></div>
 		
@@ -116,7 +119,7 @@
 		<img src="images/appLogin.png"/>
 	</div>
 	
-	<a name="footer"></a>
+	
 	<footer id="main-footer">
 		<p class="container">Copyright &copy 2018 My Website</p>
 	</footer>
