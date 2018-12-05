@@ -107,10 +107,10 @@ body{
 
 @media(max-width:1200px){
 	#beaconimg{
-		width:100%
+		width:100%;
 	}
 
 	#main{
-		width:100%
+		width:100%;
 	}
 }
