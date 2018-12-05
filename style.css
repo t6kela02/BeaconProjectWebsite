@@ -26,8 +26,8 @@ body{
 .whitetextarea{
 	width:80%;
 	margin:10px auto;
-	/*padding:40px;
-	box-sizing:border-box;*/
+	padding:40px;
+	box-sizing:border-box;
 	overflow:hidden;
 	color: #000;
 	background-color:#fff;
