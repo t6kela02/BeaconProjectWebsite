@@ -87,7 +87,7 @@
 				},
 				legend: {
 					labels: {
-						fontColor: 'white'
+						fontColor: 'black'
 					}
 				}
 			}
