@@ -38,7 +38,7 @@
 		</section>
 	</div>
 	
-	<a name="Data"></a>
+	<a name="Data" class="anchor"></a>
 	<div class="whitetextarea">
 		<h1>Data</h1>
 		<p>All users time by seconds near at different beacon</p>
@@ -94,7 +94,7 @@
 		});
 	</script>
 	
-	<a name="App"></a>
+	<a name="App" class="anchor"></a>
 	<div class="whitetextarea">
 		<h1>App</h1>
 		<section class="appPlace">
