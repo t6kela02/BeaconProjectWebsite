@@ -12,13 +12,13 @@ body{
 }
 
 .container{
-	width:70%;
+	width:60%;
 	margin:auto;
 	overflow:hidden;
 }
 
 .navigationbar{
-	width:90%;
+	width:80%;
 	margin:auto;
 	overflow:hidden;
 }
