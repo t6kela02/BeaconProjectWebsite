@@ -121,12 +121,9 @@ body{
 
 @media(max-width:1300px){
 	#beaconimg{
-		padding-top:10px;
+		padding-top:20px;
 		width:100%;
-		float:center;
-		
-		display:inline-block;
-		position:relative;
+		display:block;
 	}
 
 	#main{
