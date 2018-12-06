@@ -64,7 +64,7 @@
 					label: '# of Time',
 					data: [beaconData1, beaconData2, beaconData3, beaconData4, beaconData5],
 					backgroundColor: [
-						'#1829ba',
+						'#136edd',
 						'#ef2de9',
 						'#00c410',
 						'#960000',
