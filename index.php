@@ -97,7 +97,7 @@
 	<div class="whitetextarea">
 		<h1>App</h1>
 		<div class="grid">
-			<div class="firstGrid">
+			<div class="gridColum">
 				<div class="GridCenterItem">
 					<img class="gridImage" src="images/appLogin.png"/>
 				</div>
@@ -105,7 +105,7 @@
 					<p>You can log in or make a new account</p>
 				</div>
 			</div>
-			<div class="firstGrid">
+			<div class="gridColum">
 				<div class="GridCenterItem">
 					<img class="gridImage" src="images/appUserdata1.png"/>
 				</div>
@@ -113,7 +113,7 @@
 					<p>Watch your own or all users data</p>
 				</div>
 			</div>
-			<div class="firstGrid">
+			<div class="gridColum">
 				<div class="GridCenterItem">
 					<img class="gridImage" src="images/appBeacondata.png"/>
 				</div>
