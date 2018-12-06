@@ -40,7 +40,7 @@
 	<a name="Data" class="anchor"></a>
 	<div class="whitetextarea">
 		<h1>Data</h1>
-		<p>All users time by seconds near at different beacon</p>
+		<p>All users time by seconds near at different beacon.</p>
 		<canvas id="myChart"></canvas>
 	</div>
 	
