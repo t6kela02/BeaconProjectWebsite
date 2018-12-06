@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -97,18 +96,32 @@
 	<a name="App" class="anchor"></a>
 	<div class="whitetextarea">
 		<h1>App</h1>
-		<section class="appPlace">
-			<img class="appImg" src="images/appLogin.png"/>
-			<p>You can log in or make a new account</p>
-		</section>
-		<section class="appPlace">
-			<img class="appImg" src="images/appUserdata1.png"/>
-			<p>Watch your own or all users data</p>
-		</section>
-		<section class="appPlace">
-			<img class="appImg" src="images/appBeacondata.png"/>
-			<p>See time spent near at any beacon by date</p>
-		</section>
+		<div class="grid">
+			<div class="firstGrid">
+				<div class="GridCenterItem">
+					<img class="gridImage" src="images/appLogin.png"/>
+				</div>
+				<div class="GridCenterItem">
+					<p>You can log in or make a new account</p>
+				</div>
+			</div>
+			<div class="firstGrid">
+				<div class="GridCenterItem">
+					<img class="gridImage" src="images/appUserdata1.png"/>
+				</div>
+				<div class="GridCenterItem">
+					<p>Watch your own or all users data</p>
+				</div>
+			</div>
+			<div class="firstGrid">
+				<div class="GridCenterItem">
+					<img class="gridImage" src="images/appBeacondata.png"/>
+				</div>
+				<div class="GridCenterItem">
+					<p>See time spent near at any beacon by date</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<footer id="main-footer">
