@@ -129,4 +129,10 @@ body{
 	#main{
 		width:100%;
 	}
+	
+	.grid{
+		margin-top:50px;
+		display: grid;
+		grid-template-columns: 100%;
+	}
 }
