@@ -33,15 +33,23 @@ body{
 	background-color:#fff;
 }
 
-.centteri{
-	display:inline-block;
-	position: relative;
+.grid{
+	margin-top:50px;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
 }
 
-.appPlace{
-	display:inline-block;
-	width:33%;
-	float:center;
+.gridColum{
+	display:grid;
+}
+
+.GridCenterItem{
+	overflow:hidden;
+	justify-self: center;
+}
+
+.gridImage{
+	width: 300px;
 }
 
 #main{
