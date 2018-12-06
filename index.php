@@ -28,7 +28,7 @@
 		<section id="main">
 			<h1>Project</h1>
 			<p>
-			The project uses Estimoto beacons, which the Android application recognises using bluethooth. 
+			The project uses Estimote beacons, which the Android application recognises using bluethooth. 
 			The application saves the time spent near a certain beacon to the database and user can view own or all users spent time.
 			</p>
 		</section>
