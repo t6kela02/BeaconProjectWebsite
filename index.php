@@ -48,7 +48,7 @@
 		include('connection.php');
 	?>
 	<script>
-		var beaconData1 = <?php echo json_encode($Kyykkypaikka); ?>;
+		var beaconData1 = <?php echo json_encode($beacon1time); ?>;
 		var beaconData2 = <?php echo json_encode($beacon2time); ?>;
 		var beaconData3 = <?php echo json_encode($beacon3time); ?>;
 		var beaconData4 = <?php echo json_encode($beacon4time); ?>;
