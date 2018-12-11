@@ -9,7 +9,7 @@
 
 	/*Getting users spend time*/
 	$beacon1time = 0;
-	$sqlget1 = 'SELECT * FROM data WHERE beacon_name = "Paikka 1"';
+	$sqlget1 = 'SELECT * FROM data WHERE beacon_name = "Kyykkypaikka"';
 	$sqldata1 = mysqli_query($dbcon, $sqlget1) or die('Error loading data');
 
 	while($row = mysqli_fetch_array($sqldata1, MYSQLI_ASSOC)){
@@ -17,7 +17,7 @@
 	}
 
 	$beacon2time = 0;
-	$sqlget2 = 'SELECT * FROM data WHERE beacon_name = "Paikka 2"';
+	$sqlget2 = 'SELECT * FROM data WHERE beacon_name = "Maastavetopaikka"';
 	$sqldata2 = mysqli_query($dbcon, $sqlget2) or die('Error loading data');
 
 	while($row = mysqli_fetch_array($sqldata2, MYSQLI_ASSOC)){
@@ -25,7 +25,7 @@
 	}
 
 	$beacon3time = 0;
-	$sqlget3 = 'SELECT * FROM data WHERE beacon_name = "Paikka 3"';
+	$sqlget3 = 'SELECT * FROM data WHERE beacon_name = "Penkkipaikka"';
 	$sqldata3 = mysqli_query($dbcon, $sqlget3) or die('Error loading data');
 
 	while($row = mysqli_fetch_array($sqldata3, MYSQLI_ASSOC)){
@@ -33,7 +33,7 @@
 	}
 
 	$beacon4time = 0;
-	$sqlget4 = 'SELECT * FROM data WHERE beacon_name = "Paikka 4"';
+	$sqlget4 = 'SELECT * FROM data WHERE beacon_name = "Pukuhuone"';
 	$sqldata4 = mysqli_query($dbcon, $sqlget4) or die('Error loading data');
 
 	while($row = mysqli_fetch_array($sqldata4, MYSQLI_ASSOC)){
@@ -41,7 +41,7 @@
 	}
 
 	$beacon5time = 0;
-	$sqlget5 = 'SELECT * FROM data WHERE beacon_name = "Paikka 5"';
+	$sqlget5 = 'SELECT * FROM data WHERE beacon_name = "Taljapaikka"';
 	$sqldata5 = mysqli_query($dbcon, $sqlget5) or die('Error loading data');
 
 	while($row = mysqli_fetch_array($sqldata5, MYSQLI_ASSOC)){
